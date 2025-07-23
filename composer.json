@@ -13,5 +13,8 @@
         }
     },
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "almasaeed2010/adminlte": "~3.2",
+        "twbs/bootstrap": "5.2.3"
+    }
 }

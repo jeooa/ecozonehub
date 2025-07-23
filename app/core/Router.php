@@ -31,7 +31,8 @@ class Router
         $action = $this->routes[$method][$uri];
 
         list($controllerName, $methodName) = explode('@', $action);
-        $controllerClass = "App\\Controllers\\" . $controllerName;
+        $controllerClass = "App\\Controllers\\" . str_replace('/', '\\', $controllerName);
+
 
         if (!class_exists($controllerClass) || !method_exists($controllerClass, $methodName)) {
             http_response_code(500);
