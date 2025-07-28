@@ -1,5 +1,4 @@
 
-
 <section class="content">
   <div class="container-fluid">
     <a href="/ecozonehub/public/administrator/dashboard" class="nav-link">
