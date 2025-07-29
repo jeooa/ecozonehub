@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <?php include __DIR__ . '../../includes/header.php'; ?>
-
-
+  <?php include __DIR__ . '/../includes/header.php'; ?>
+  <?php include __DIR__ . '/../../config/config.php' ?>
+  <?php include __DIR__ . '/../../helpers/url_helper.php' ?>
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="<?= baseurl() ?>/dist/datatables/css/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="<?= baseurl() ?>/dist/datatables/css/responsive.bootstrap5.min.css">

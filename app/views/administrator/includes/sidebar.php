@@ -18,8 +18,8 @@
         <li class="nav-header">RECORDS</li>
 
         <li class="nav-item">
-          <a href="../dashboard/index.php"
-            class="nav-link <?= str_contains($currentPath, '/dashboard/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/dashboard"
+            class="nav-link <?= str_contains($currentPath, '/administrator/dashboard') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-columns-gap"></i>
             <p>
               Dashboard
@@ -28,16 +28,16 @@
         </li>
 
         <li class="nav-item">
-          <a href="../products/index.php"
-            class="nav-link <?= str_contains($currentPath, '/products/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/products"
+            class="nav-link <?= str_contains($currentPath, '/adminstrator/products') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-box"></i>
             <p>Products</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../categories/index.php"
-            class="nav-link <?= str_contains($currentPath, '/categories/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/categories"
+            class="nav-link <?= str_contains($currentPath, 'administrator/categories') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-tags"></i>
             <p>Categories</p>
           </a>
