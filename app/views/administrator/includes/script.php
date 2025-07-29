@@ -5,9 +5,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
-<script src="<?= baseurl() ?>/public/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?= baseurl() ?>/libs/bootstrap/js/bootstrap.min.js"></script>
 <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-<script src="<?= baseurl() ?>/public/dist/js/adminlte.js"></script>
+<script src="<?= baseurl() ?>/dist/js/adminlte.js"></script>
 <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
 <script>
   const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
@@ -95,4 +95,4 @@
   // </script>
 
 <!-- apexcharts -->
-<script src="<?= baseurl() ?>/public/libs/apexcharts/apexcharts.min.js"></script>
+<script src="<?= baseurl() ?>/libs/apexcharts/apexcharts.min.js"></script>
