@@ -20,11 +20,11 @@
   <link rel="stylesheet" href="<?= baseurl() ?>/libs/OverlayScrollbars/css/overlayscrollbars.min.css" />
   <!--end::Third Party Plugin(OverlayScrollbars)-->
   <!--begin::Third Party Plugin(Bootstrap Icons)-->
-  <<link rel="stylesheet" href="<?= baseurl() ?>/bootstrap/css/bootstrap.min.css" />
-  <!-- <link rel="stylesheet" href="<?= baseurl() ?>/public/libs/fontawesome/css/all.min.css" /> -->
+  <link rel="stylesheet" href="<?= baseurl() ?>/public/libs/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="<?= baseurl() ?>/public/libs/fontawesome/css/all.min.css" />
   <!--end::Third Party Plugin(Bootstrap Icons)-->
   <!--begin::Required Plugin(AdminLTE)-->
-  <link rel="stylesheet" href="<?= baseurl() ?>/adminlte/dist/css/adminlte.css" />
+  <link rel="stylesheet" href="<?= baseurl() ?>/public/dist/css/adminlte.css" />
   <!--end::Required Plugin(AdminLTE)-->
   <!-- apexcharts -->
   <link rel="stylesheet" href="<?= baseurl() ?>/libs/apexcharts/apexcharts.css" />
@@ -37,3 +37,4 @@
     /> -->
 
 </head>
+<!--end::Head-->

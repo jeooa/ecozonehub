@@ -5,7 +5,8 @@ if (!function_exists('baseurl')) {
     {
         return BASE_URL;
     }
-} else if (!function_exists('asset')) {
+}
+if (!function_exists('asset')) {
     function asset(string $path): string
     {
         return baseurl() . '/' . ltrim($path, '/');
