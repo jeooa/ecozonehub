@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Skip redirection for public folder directly
+RewriteCond %{REQUEST_URI} !^/public
+
+# Redirect all requests to /public but keep the URI (CSS, JS, routes)
+RewriteRule ^(.*)$ public/$1 [L]
