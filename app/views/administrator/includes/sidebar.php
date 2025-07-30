@@ -29,7 +29,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/products"
-            class="nav-link <?= str_contains($currentPath, '/adminstrator/products') ? 'active' : ''; ?>">
+            class="nav-link <?= str_contains($currentPath, '/administrator/products') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-box"></i>
             <p>Products</p>
           </a>
@@ -44,40 +44,40 @@
         </li>
 
         <li class="nav-item">
-          <a href="../stock_in/index.php"
-            class="nav-link <?= str_contains($currentPath, '/stock_in/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/stockin"
+            class="nav-link <?= str_contains($currentPath, '/administrator/stockin') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-plus-square"></i>
             <p>Stock In</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../sales/index.php"
-            class="nav-link <?= str_contains($currentPath, '/sales/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/sales"
+            class="nav-link <?= str_contains($currentPath, '/administrator/sales') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-cart-check"></i>
             <p>Sales</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../returns/index.php"
-            class="nav-link <?= str_contains($currentPath, '/returns/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/returns"
+            class="nav-link <?= str_contains($currentPath, '/administrator/returns') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-arrow-counterclockwise"></i>
             <p>Returns</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../damages/index.php"
-            class="nav-link <?= str_contains($currentPath, '/damages/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/damages"
+            class="nav-link <?= str_contains($currentPath, '/administrator/damages') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-exclamation-triangle"></i>
             <p>Damages</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../suppliers/index.php"
-            class="nav-link <?= str_contains($currentPath, '/suppliers/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/suppliers"
+            class="nav-link <?= str_contains($currentPath, '/administrator/suppliers') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-truck"></i>
             <p>Suppliers</p>
           </a>

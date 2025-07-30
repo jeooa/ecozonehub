@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Ecozone Farm School</title>
-<link rel="stylesheet" href="<?= BASE_URL ?>/adminlte/css/adminlte.min.css">
-<link rel="stylesheet" href="<?= BASE_URL ?>/adminlte/plugins/fontawesome-free/css/all.min.css">
-<link rel="stylesheet" href="<?= BASE_URL ?>/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-<link rel="stylesheet" href="<?= BASE_URL ?>/bootstrap/css/bootstrap.min.css">
+  <!-- Fonts -->
 
+  <link rel="stylesheet" href="<?= baseurl() ?>/dist/fonts/index.css">
 
+  <!-- OverlayScrollbars -->
+  <link rel="stylesheet" href="<?= baseurl() ?>/libs/OverlayScrollbars/css/overlayscrollbars.min.css">
+
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link rel="stylesheet" href="<?= baseurl() ?>/libs/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="<?= baseurl() ?>/libs/fontawesome/css/all.min.css">
+
+  <!-- AdminLTE -->
+  <link rel="stylesheet" href="<?= baseurl() ?>/dist/css/adminlte.css">
+
+  <!-- ApexCharts -->
+  <link rel="stylesheet" href="<?= baseurl() ?>/libs/apexcharts/apexcharts.css">`
 </head>
+
+
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
+  <div class="wrapper">
