@@ -164,7 +164,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="../logout.php" class="nav-link <?= str_contains($currentPath, '/logout.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/logout" class="nav-link">
             <i class="nav-icon bi bi-box-arrow-right"></i>
             <p>Logout</p>
           </a>

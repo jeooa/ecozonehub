@@ -11,3 +11,7 @@ $router->get('/administrator/damages', 'Administrator\damages@index');
 $router->get('/administrator/suppliers', 'Administrator\suppliers@index');
 $router->get('/', 'HomeController@dashboard');
 $router->get('/administrator/pos', 'Administrator\Pos\PosController@index');
+
+$router->get('administrator/login', 'Administrator\Login@index');
+$router->post('administrator/login/authenticate', 'Administrator\Login@authenticate');
+$router->get('administrator/logout', 'Administrator\Login@logout');
