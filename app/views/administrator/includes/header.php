@@ -29,6 +29,7 @@
   <!-- apexcharts -->
   <link rel="stylesheet" href="<?= baseurl() ?>/libs/apexcharts/apexcharts.css" />
 
+  <link rel="stylesheet" href="<?= baseurl() ?>/libs/bootstrap/css/bootstrap.min.css">
 
 </head>
 <!--end::Head-->

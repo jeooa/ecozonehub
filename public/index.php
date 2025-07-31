@@ -13,11 +13,3 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 $router->dispatch($method, $uri);
 
-// Toggle maintenance mode here
-// $isMaintenance = false;
-
-// if ($isMaintenance) {
-//     $controller = new \App\Controllers\ErrorController();
-//     $controller->maintenance();
-//     exit;
-// }

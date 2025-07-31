@@ -20,8 +20,10 @@
 
   <!-- ApexCharts -->
   <link rel="stylesheet" href="<?= baseurl() ?>/libs/apexcharts/apexcharts.css">
-</head>
 
+  <link rel="stylesheet" href="<?= baseurl() ?>/libs/bootstrap/css/bootstrap.min.css">
+
+</head>
 
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
