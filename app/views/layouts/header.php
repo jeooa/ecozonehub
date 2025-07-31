@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="<?= baseurl() ?>/dist/css/adminlte.css">
 
   <!-- ApexCharts -->
-  <link rel="stylesheet" href="<?= baseurl() ?>/libs/apexcharts/apexcharts.css">`
+  <link rel="stylesheet" href="<?= baseurl() ?>/libs/apexcharts/apexcharts.css">
 </head>
 
 

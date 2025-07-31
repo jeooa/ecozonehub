@@ -8,6 +8,7 @@ class Router
         'POST' => [],
     ];
 
+
     public function get($uri, $action)
     {
         $this->routes['GET'][$this->normalize($uri)] = $action;
@@ -24,10 +25,9 @@ class Router
 
         if (!isset($this->routes[$method][$uri])) {
             http_response_code(404);
-            echo "404 Not Found";
+            (new \App\Controllers\ErrorController)->notFound();
             exit;
         }
-
         $action = $this->routes[$method][$uri];
 
         list($controllerName, $methodName) = explode('@', $action);

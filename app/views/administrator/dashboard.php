@@ -7,11 +7,8 @@
   <!--begin::App Wrapper-->
   <div class="app-wrapper">
 
-    <?php include __DIR__ . '/../../config/config.php' ?>
-    <?php include __DIR__ . '/../../helpers/url_helper.php' ?>
-    <?php include __DIR__ . '/includes/header.php' ?>
-    <?php include __DIR__ . '/includes/navbar.php' ?>
-    <?php include __DIR__ . '/includes/sidebar.php' ?>
+    <?php admin_view_layout(); ?>
+
     <!--end::Sidebar-->
     <!--begin::App Main-->
     <main class="app-main">
@@ -171,12 +168,12 @@
     </main>
     <!--end::App Main-->
     <!--begin::Footer-->
-    <?php include __DIR__ . '/includes/footer.php' ?>
+
     <!--end::Footer-->
   </div>
   <!--end::App Wrapper-->
   <!--begin::Script-->
-  <?php include __DIR__ . '/includes/script.php' ?>
+
 
   <!--end::Script-->
 </body>
