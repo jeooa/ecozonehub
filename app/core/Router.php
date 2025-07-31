@@ -36,9 +36,11 @@ class Router
 
         if (!class_exists($controllerClass) || !method_exists($controllerClass, $methodName)) {
             http_response_code(500);
-            echo "Controller or method not found.";
+            $errorController = new \App\Controllers\ErrorController();
+            $errorController->internalError();
             exit;
         }
+
 
         $controller = new $controllerClass();
         call_user_func([$controller, $methodName]);
