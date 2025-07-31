@@ -10,3 +10,4 @@ class Dashboard extends Controller
         $this->view("administrator/dashboard");
     }
 }
+
