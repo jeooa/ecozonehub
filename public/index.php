@@ -12,4 +12,3 @@ $uri = $_GET['url'] ?? '/';
 $method = $_SERVER['REQUEST_METHOD'];
 
 $router->dispatch($method, $uri);
-

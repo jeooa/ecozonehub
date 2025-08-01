@@ -1,12 +1,12 @@
 <?php
-
 namespace App\Controllers\Administrator\Pos;
 
-class PosController
+use App\Core\Controller;
+
+class PosController extends Controller
 {
     public function index()
     {
-        include __DIR__ . '/../../../views/administrator/pos/pos.php';
-
+        $this->view("administrator/pos/pos");
     }
 }

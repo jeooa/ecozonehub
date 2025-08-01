@@ -1,13 +1,13 @@
 <?php
-namespace App\Controllers\Administrator;
+namespace App\Controllers\Administrator\Dashboard;
 
 use App\Core\Controller;
 
-class Dashboard extends Controller
+class DashboardController extends Controller
 {
     public function index()
     {
-        $this->view("administrator/dashboard");
+        $this->view("administrator/dashboard/dashboard");
     }
 
     public function logout()

@@ -28,11 +28,11 @@ class Router
             (new \App\Controllers\ErrorController)->notFound();
             exit;
         }
+
         $action = $this->routes[$method][$uri];
-
         list($controllerName, $methodName) = explode('@', $action);
-        $controllerClass = "App\\Controllers\\" . str_replace('/', '\\', $controllerName);
 
+        $controllerClass = "App\\Controllers\\" . str_replace(['/', '\\'], '\\', $controllerName);
 
         if (!class_exists($controllerClass) || !method_exists($controllerClass, $methodName)) {
             http_response_code(500);
@@ -41,10 +41,10 @@ class Router
             exit;
         }
 
-
         $controller = new $controllerClass();
         call_user_func([$controller, $methodName]);
     }
+
 
     protected function normalize($uri)
     {
