@@ -8,8 +8,7 @@ if (!function_exists('check_admin_auth')) {
         }
 
         if (!isset($_SESSION['admin'])) {
-            header('Location: ' . baseurl() . '/administrator/login');
-            exit;
+            redirect('/administrator/login');
         }
     }
 }

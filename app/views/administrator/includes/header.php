@@ -15,22 +15,25 @@
     content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard" />
   <!--end::Primary Meta Tags-->
   <!--begin::Fonts-->
-  <link rel="stylesheet" href="<?= baseurl() ?>/dist/fonts/index.css" />
-  <!--end::Fonts-->
-  <!--begin::Third Party Plugin(OverlayScrollbars)-->
-  <link rel="stylesheet" href="<?= baseurl() ?>/libs/OverlayScrollbars/css/overlayscrollbars.min.css" />
-  <!--end::Third Party Plugin(OverlayScrollbars)-->
-  <!--begin::Third Party Plugin(Bootstrap Icons)-->
-  <link rel="stylesheet" href="<?= baseurl() ?>/libs/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="<?= baseurl() ?>/libs/fontawesome/css/all.min.css" />
-  <!--end::Third Party Plugin(Bootstrap Icons)-->
-  <!--begin::Required Plugin(AdminLTE)-->
-  <link rel="stylesheet" href="<?= baseurl() ?>/dist/css/adminlte.css" />
-  <!--end::Required Plugin(AdminLTE)-->
-  <!-- apexcharts -->
-  <link rel="stylesheet" href="<?= baseurl() ?>/libs/apexcharts/apexcharts.css" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="<?= asset('dist/fonts/index.css') ?>" />
 
-  <link rel="stylesheet" href="<?= baseurl() ?>/libs/bootstrap/css/bootstrap.min.css">
+  <!-- OverlayScrollbars -->
+  <link rel="stylesheet" href="<?= asset('libs/OverlayScrollbars/css/overlayscrollbars.min.css') ?>" />
+
+  <!-- Bootstrap Icons + Font Awesome -->
+  <link rel="stylesheet" href="<?= asset('libs/font/bootstrap-icons.min.css') ?>" />
+  <link rel="stylesheet" href="<?= asset('libs/fontawesome/css/all.min.css') ?>" />
+
+  <!-- AdminLTE -->
+  <link rel="stylesheet" href="<?= asset('dist/css/adminlte.css') ?>" />
+
+  <!-- Apexcharts -->
+  <link rel="stylesheet" href="<?= asset('libs/apexcharts/apexcharts.css') ?>" />
+
+  <!-- Bootstrap Core -->
+  <link rel="stylesheet" href="<?= asset('libs/bootstrap/css/bootstrap.min.css') ?>">
+
 
 </head>
 <!--end::Head-->

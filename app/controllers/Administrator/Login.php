@@ -2,6 +2,7 @@
 
 namespace App\Controllers\Administrator;
 
+use function set_flash;
 use App\Core\Controller;
 use App\Models\Administrator;
 
@@ -27,12 +28,10 @@ class Login extends Controller
 
             if ($admin && $password === $admin['password']) {
                 $_SESSION['admin'] = $admin;
-                header('Location: ' . baseurl() . '/administrator/dashboard');
-                exit;
+                redirect('/administrator/dashboard');
             } else {
-                $_SESSION['error'] = 'Invalid username or password';
-                header('Location: ' . baseurl() . '/administrator/login');
-                exit;
+                set_flash('error', 'Invalid username or password');
+                redirect('/administrator/login');
             }
         }
     }
@@ -45,7 +44,7 @@ class Login extends Controller
         }
 
         unset($_SESSION['admin']);
-        header('Location: ' . baseurl() . '/administrator/login');
+        redirect('/administrator/login');
         exit;
     }
 
