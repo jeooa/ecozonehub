@@ -1,5 +1,5 @@
 <?php
-
+//Administrator Routing
 $router->get('/', 'HomeController@index');
 $router->get('/administrator/dashboard', 'Administrator\Dashboard\DashboardController@index');
 $router->get('/administrator/products', 'Administrator\Products\ProductsController@index');
@@ -16,9 +16,15 @@ $router->get('/administrator/returnsReports', 'Administrator\Reports\returnsRepo
 $router->get('/', 'HomeController@dashboard');
 $router->get('/administrator/pos', 'Administrator\Pos\PosController@index');
 
-$router->get('administrator/login', 'Administrator\Login@index');
-$router->post('administrator/login/authenticate', 'Administrator\Login@authenticate');
-$router->get('administrator/logout', 'Administrator\Login@logout');
+
+//Administator Login Routing
+$router->get('administrator/login', 'Administrator\Login\Login@index');
+$router->post('administrator/login/authenticate', 'Administrator\Login\Login@authenticate');
+$router->get('administrator/logout', 'Administrator\Login\Login@logout');
+
+
+
+
 
 
 
