@@ -84,8 +84,8 @@
         </li>
 
         <li class="nav-item">
-          <a href="../customers/index.php"
-            class="nav-link <?= str_contains($currentPath, '/customers/index.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/customers"
+            class="nav-link <?= str_contains($currentPath, '/administrator/customers') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-people"></i>
             <p>Customers</p>
           </a>
@@ -95,24 +95,24 @@
         <li class="nav-header">REPORTS</li>
 
         <li class="nav-item">
-          <a href="../reports/inventory.php"
-            class="nav-link <?= str_contains($currentPath, '/reports/inventory.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/inventoryreports"
+            class="nav-link <?= str_contains($currentPath, '/administrtor/inventoryReports') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-graph-up"></i>
             <p>Inventory Report</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../reports/sales.php"
-            class="nav-link <?= str_contains($currentPath, '/reports/sales.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/salesReports"
+            class="nav-link <?= str_contains($currentPath, 'administrtor/inventoryReports') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-bar-chart-line"></i>
             <p>Sales Report</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../reports/returns.php"
-            class="nav-link <?= str_contains($currentPath, '/reports/returns.php') ? 'active' : ''; ?>">
+          <a href="<?= baseurl() ?>/administrator/returnsReports"
+            class=" nav-link <?= str_contains($currentPath, 'administrtor/returnsReports') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-arrow-repeat"></i>
             <p>Returns Report</p>
           </a>

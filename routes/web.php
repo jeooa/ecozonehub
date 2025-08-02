@@ -9,6 +9,10 @@ $router->get('/administrator/sales', 'Administrator\Sales\SalesController@index'
 $router->get('/administrator/returns', 'Administrator\Returns\ReturnsController@index');
 $router->get('/administrator/damages', 'Administrator\Damages\DamagesController@index');
 $router->get('/administrator/suppliers', 'Administrator\Suppliers\SuppliersController@index');
+$router->get('/administrator/customers', 'Administrator\Customers\CustomersController@index');
+$router->get('/administrator/inventoryReports', 'Administrator\Reports\InventoryReports\InventoryReportsController@index');
+$router->get('/administrator/salesReports', 'Administrator\Reports\salesReports\SalesReportsController@index');
+$router->get('/administrator/returnsReports', 'Administrator\Reports\returnsReports\ReturnsReportsController@index');
 $router->get('/', 'HomeController@dashboard');
 $router->get('/administrator/pos', 'Administrator\Pos\PosController@index');
 
