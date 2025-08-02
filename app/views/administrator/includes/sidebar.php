@@ -95,7 +95,7 @@
         <li class="nav-header">REPORTS</li>
 
         <li class="nav-item">
-          <a href="<?= baseurl() ?>/administrator/inventoryreports"
+          <a href="<?= baseurl() ?>/administrator/inventoryReports"
             class="nav-link <?= str_contains($currentPath, '/administrtor/inventoryReports') ? 'active' : ''; ?>">
             <i class="nav-icon bi bi-graph-up"></i>
             <p>Inventory Report</p>
