@@ -1,28 +1,29 @@
 <?php
 namespace App\Controllers;
 
-class ErrorController
+use App\Core\Controller;
+class ErrorController extends Controller
 {
     public function notFound()
     {
         http_response_code(404);
-        include __DIR__ . '/../views/errors/404.php';
+        $this->view('errors/404');
 
     }
 
     public function internalError()
     {
         http_response_code(500);
-        include __DIR__ . '/../views/errors/500.php';
+        $this->view('errors/500');
     }
     public function forbidden()
     {
         http_response_code(403);
-        include __DIR__ . '/../views/errors/403.php';
+        $this->view('errors/403');
     }
     public function maintenance()
     {
         http_response_code(503);
-        include __DIR__ . '/../views/errors/maintenance.php';
+        $this->view('errors/maintenance');
     }
 }
