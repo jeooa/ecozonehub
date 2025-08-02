@@ -25,7 +25,7 @@ class Router
 
         if (!isset($this->routes[$method][$uri])) {
             http_response_code(404);
-            (new \App\Controllers\ErrorController)->notFound();
+            (new \App\Controllers\Errors\ErrorController)->notFound();
             exit;
         }
 
@@ -36,7 +36,7 @@ class Router
 
         if (!class_exists($controllerClass) || !method_exists($controllerClass, $methodName)) {
             http_response_code(500);
-            $errorController = new \App\Controllers\ErrorController();
+            $errorController = new \App\Controllers\Errors\ErrorController();
             $errorController->internalError();
             exit;
         }

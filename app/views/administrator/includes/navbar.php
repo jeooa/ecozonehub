@@ -96,18 +96,13 @@
           <!--begin::Menu Footer-->
           <li class="user-footer">
             <a href="#" class="btn btn-default btn-flat">Profile</a>
-            <a href="../includes/logout.php" class="btn btn-default btn-flat float-end">Sign out</a>
+            <a href="<?= baseurl() ?>/administrator/logout" class="btn btn-default btn-flat float-end">Sign out</a>
           </li>
-          <!--end::Menu Footer-->
         </ul>
       </li>
-      <!--end::User Menu Dropdown-->
     </ul>
-    <!--end::End Navbar Links-->
   </div>
-  <!--end::Container-->
 </nav>
-<!--end::Navbar-->
 
 <script>
   // Color Mode Toggler
