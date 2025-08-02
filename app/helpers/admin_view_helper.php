@@ -19,4 +19,3 @@ if (!function_exists('admin_view_layout')) {
         }
     }
 }
-
