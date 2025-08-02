@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Administrator;
+namespace App\Controllers\Administrator\Login;
 
 use function set_flash;
 use App\Core\Controller;
@@ -10,7 +10,7 @@ class Login extends Controller
 {
     public function index()
     {
-        $this->view('administrator/login');
+        $this->view('administrator/login/login');
     }
 
     public function authenticate()
