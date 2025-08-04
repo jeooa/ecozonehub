@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Administrator\Login;
 
 use App\Core\Model;
 
-class Administrator extends Model
+class Login extends Model
 {
     public function getByUsername(string $username): ?array
     {
@@ -15,3 +15,5 @@ class Administrator extends Model
         return $stmt->fetch(\PDO::FETCH_ASSOC) ?: null;
     }
 }
+
+
