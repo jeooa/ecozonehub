@@ -1,4 +1,5 @@
 <?php
+
 use App\Controllers\ErrorController;
 
 if (!function_exists('check_maintenance_mode')) {

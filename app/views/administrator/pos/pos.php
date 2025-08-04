@@ -355,8 +355,7 @@
   </div>
   <script>
     // Sample products data
-    const products = [
-      {
+    const products = [{
         id: 1,
         name: "Wheat Thins Original",
         code: "58641",
@@ -470,11 +469,11 @@
     let currentFilter = 'all';
 
     // Load products on page load
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       loadProducts();
 
       // Search functionality
-      document.getElementById('productSearch').addEventListener('input', function (e) {
+      document.getElementById('productSearch').addEventListener('input', function(e) {
         const searchTerm = e.target.value.toLowerCase();
         const filteredProducts = products.filter(product =>
           product.name.toLowerCase().includes(searchTerm) ||

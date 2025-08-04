@@ -6,7 +6,7 @@
   <title>Ecozone Farm School</title>
   <!-- Fonts -->
 
-  <link rel="stylesheet" href="<?= baseurl() ?>/dist/fonts/index.css">
+  <link rel="stylesheet" href="<?= baseurl() ?>./dist/fonts/index.css" />
 
   <!-- OverlayScrollbars -->
   <link rel="stylesheet" href="<?= baseurl() ?>/libs/OverlayScrollbars/css/overlayscrollbars.min.css">
@@ -25,5 +25,5 @@
 
 </head>
 
-<body class="hold-transition sidebar-mini">
-  <div class="wrapper">
+<!-- <body class="hold-transition sidebar-mini">
+  <div class="wrapper"> -->
