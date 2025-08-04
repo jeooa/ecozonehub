@@ -4,7 +4,13 @@ namespace App\Core;
 
 use App\Models\Database\Database;
 
-class Model extends Database
+class Model
 {
-    //Add common methods here like findAll(), findById(), etc.
+    protected \PDO $db;
+
+    public function __construct()
+    {
+        // Use the Singleton instance of Database
+        $this->db = Database::getInstance()->getConnection();
+    }
 }
