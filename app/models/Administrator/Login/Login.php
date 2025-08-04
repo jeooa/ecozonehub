@@ -8,12 +8,9 @@ class Login extends Model
 {
     public function getByUsername(string $username): ?array
     {
-        $stmt = $this->db->prepare("SELECT * FROM administrator WHERE username = :username");
-        $stmt->bindParam(':username', $username);
-        $stmt->execute();
+        $stmt = $this->db->prepare("SELECT * FROM administrator WHERE username = :username LIMIT 1");
+        $stmt->execute([':username' => $username]);
 
         return $stmt->fetch(\PDO::FETCH_ASSOC) ?: null;
     }
 }
-
-
