@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Controllers\Administrator\Login;
-
 use function set_flash;
 use App\Core\Controller;
 use App\Models\Administrator\Login\Login as LoginModel;
@@ -15,12 +13,8 @@ class Login extends Controller
 
     public function authenticate()
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $username = $_POST['username'] ?? '';
+            $username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_FULL_SPECIAL_CHARS)) ?? '';
             $password = $_POST['password'] ?? '';
 
             $adminModel = new LoginModel();
@@ -39,10 +33,6 @@ class Login extends Controller
 
     public function logout()
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-
         unset($_SESSION['admin']);
         redirect('/administrator/login');
         exit;
