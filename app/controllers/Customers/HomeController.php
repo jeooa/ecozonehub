@@ -7,6 +7,6 @@ class HomeController extends Controller
 {
     public function dashboard()
     {
-        $this->view("home/home");
+        $this->view("customers/home");
     }
 }
