@@ -4,7 +4,7 @@ namespace App\Controllers\Administrator\Login;
 
 use function set_flash;
 use App\Core\Controller;
-use App\Models\Administrator;
+use App\Models\Administrator\Login\Login as LoginModel;
 
 class Login extends Controller
 {
@@ -23,11 +23,12 @@ class Login extends Controller
             $username = $_POST['username'] ?? '';
             $password = $_POST['password'] ?? '';
 
-            $adminModel = new Administrator();
+            $adminModel = new LoginModel();
             $admin = $adminModel->getByUsername($username);
 
-            if ($admin && $password === $admin['password']) {
+            if ($admin && password_verify($password, $admin['password'])) {
                 $_SESSION['admin'] = $admin;
+                session_regenerate_id(true);
                 redirect('/administrator/dashboard');
             } else {
                 set_flash('error', 'Invalid username or password');
@@ -35,7 +36,6 @@ class Login extends Controller
             }
         }
     }
-
 
     public function logout()
     {
@@ -47,5 +47,4 @@ class Login extends Controller
         redirect('/administrator/login');
         exit;
     }
-
 }
