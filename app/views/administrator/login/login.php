@@ -9,7 +9,6 @@
         padding: 20px;
         position: relative;
         overflow: hidden;
-        font-family: 'Source Sans Pro', sans-serif;
     }
 
     body::before {
@@ -19,7 +18,7 @@
         left: 0;
         width: 100%;
         height: 45vh;
-        background: #fafafa url('<?= baseurl(); ?>/dist/assets/img/collage.jpg') center/cover no-repeat;
+        background: #fafafa url('<?= asset('dist/assets/img/collage.jpg'); ?>') center/cover no-repeat;
         -webkit-mask-image: linear-gradient(black, transparent);
         mask-image: linear-gradient(black, transparent);
         z-index: 1;
@@ -227,7 +226,7 @@
 <div class="login-container mt-5">
     <div class="login-section">
         <div class="logo-container">
-            <img src="<?= baseurl(); ?>/dist/assets/img/eco-zone-logo.jpg" alt="Eco-Zone Logo" class="logo-image">
+            <img src="<?= asset('dist/assets/img/eco-zone-logo.jpg'); ?>" alt="Eco-Zone Logo" class="logo-image">
         </div>
         <div class="login-header">
             <h1>Member Login</h1>
@@ -251,12 +250,12 @@
             <button type="submit" class="login-btn">Login</button>
         </form>
 
-        <?php if (isset($_SESSION['error'])): ?>
+        <?php if ($error = get_flash('error')): ?>
             <div class="alert alert-danger">
-                <?= htmlspecialchars($_SESSION['error'], ENT_QUOTES, 'UTF-8');
-                unset($_SESSION['error']); ?>
+                <?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?>
             </div>
         <?php endif; ?>
+
     </div>
 </div>
 <script>
