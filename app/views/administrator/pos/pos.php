@@ -2,12 +2,6 @@
 <html lang="en">
 
 <head>
-  <?php include __DIR__ . '/../includes/header.php'; ?>
-  <?php include __DIR__ . '/../../config/config.php' ?>
-  <?php include __DIR__ . '/../../helpers/url_helper.php' ?>
-  <!-- DataTables CSS -->
-  <link rel="stylesheet" href="<?= baseurl() ?>/dist/datatables/css/dataTables.bootstrap5.min.css">
-  <link rel="stylesheet" href="<?= baseurl() ?>/dist/datatables/css/responsive.bootstrap5.min.css">
 
 
   <style>
@@ -89,8 +83,8 @@
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
   <div class="app-wrapper">
 
-    <?php include '../../includes/navbar.php'; ?>
-    <?php include '../../includes/sidebar.php'; ?>
+    <?php admin_view_layout(); ?>
+
 
     <main class="app-main">
       <div class="app-content-header">
@@ -168,7 +162,7 @@
                 <i class="bi bi-calculator"></i> Calculator
               </button> -->
 
-                    <a href="../dashboard/index.php" class="btn btn-outline-warning btn-sm">
+                    <a href="<?= baseurl() ?>/administrator/dashboard" class="btn btn-outline-warning btn-sm">
                       <i class="bi bi-columns-gap"></i> Dashboard
                     </a>
                   </div>
@@ -324,17 +318,8 @@
 
     </main>
 
-    <?php include '../../includes/footer.php'; ?>
   </div>
 
-  <?php include '../../includes/script.php'; ?>
-
-  <!-- jQuery & DataTables -->
-  <script src="<?= baseurl() ?>/dist/datatables/js/jquery-3.7.1.min.js"></script>
-  <script src="<?= baseurl() ?>/dist/datatables/js/jquery.dataTables.min.js"></script>
-  <script src="<?= baseurl() ?>/dist/datatables/js/dataTables.bootstrap5.min.js"></script>
-  <script src="<?= baseurl() ?>/dist/datatables/js/dataTables.responsive.min.js"></script>
-  <script src="<?= baseurl() ?>/dist/datatables/js/responsive.bootstrap5.min.js"></script>
 
 
   <!-- Optional: Placeholder modals -->
