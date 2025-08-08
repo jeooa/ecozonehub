@@ -22,16 +22,17 @@ class Login extends Controller
             $adminModel = new LoginModel();
             $admin = $adminModel->getByUsername($username);
 
-            if ($admin && password_verify($password, $admin['password'])) {
+            if ($admin && password_verify($password, $admin['password']) && $admin['user_type'] === 'admin') {
                 $_SESSION['admin'] = $admin;
                 session_regenerate_id(true);
                 redirect('/administrator/dashboard');
             } else {
-                set_flash('error', 'Invalid username or password');
+                set_flash('error', 'Invalid credentials or unauthorized access');
                 redirect('/administrator/login');
             }
         }
     }
+
 
     public function logout()
     {
