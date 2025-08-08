@@ -7,6 +7,7 @@
   <!-- Fonts -->
 
   <link rel="stylesheet" href="<?= asset('./dist/fonts/index.css') ?>" />
+  <link rel="stylesheet" href="<?= asset('./dist/fonts/stylesheet.css') ?>" />
 
   <!-- OverlayScrollbars -->
   <link rel="stylesheet" href="<?= asset('libs/OverlayScrollbars/css/overlayscrollbars.min.css') ?>" />

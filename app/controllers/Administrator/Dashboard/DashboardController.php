@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controllers\Administrator\Dashboard;
 
 use App\Core\Controller;
@@ -17,4 +18,3 @@ class DashboardController extends Controller
         exit;
     }
 }
-

@@ -18,7 +18,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/dashboard"
-            class="nav-link  <?= is_active('/administrator/dashboard', ); ?>">
+            class="nav-link  <?= is_active('/administrator/dashboard',); ?>">
             <i class="nav-icon bi bi-columns-gap"></i>
             <p>
               Dashboard
@@ -28,7 +28,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/products"
-            class="nav-link  <?= is_active('/administrator/products', ); ?>">
+            class="nav-link  <?= is_active('/administrator/products',); ?>">
 
             <i class="nav-icon bi bi-box"></i>
             <p>Products</p>
@@ -37,7 +37,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/categories"
-            class="nav-link  <?= is_active('/administrator/categories', ); ?>">
+            class="nav-link  <?= is_active('/administrator/categories',); ?>">
 
             <i class="nav-icon bi bi-tags"></i>
             <p>Categories</p>
@@ -46,14 +46,14 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/stockin"
-            class="nav-link  <?= is_active('/administrator/stockin', ); ?>">
+            class="nav-link  <?= is_active('/administrator/stockin',); ?>">
             <i class="nav-icon bi bi-plus-square"></i>
             <p>Stock In</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="<?= baseurl() ?>/administrator/sales" class="nav-link  <?= is_active('/administrator/sales', ); ?>">
+          <a href="<?= baseurl() ?>/administrator/sales" class="nav-link  <?= is_active('/administrator/sales',); ?>">
             <i class="nav-icon bi bi-cart-check"></i>
             <p>Sales</p>
           </a>
@@ -61,7 +61,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/returns"
-            class="nav-link  <?= is_active('/administrator/returns', ); ?>">
+            class="nav-link  <?= is_active('/administrator/returns',); ?>">
             <i class="nav-icon bi bi-arrow-counterclockwise"></i>
             <p>Returns</p>
           </a>
@@ -69,7 +69,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/damages"
-            class="nav-link  <?= is_active('/administrator/damages', ); ?>">
+            class="nav-link  <?= is_active('/administrator/damages',); ?>">
             <i class="nav-icon bi bi-exclamation-triangle"></i>
             <p>Damages</p>
           </a>
@@ -77,7 +77,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/suppliers"
-            class="nav-link  <?= is_active('/administrator/suppliers', ); ?>">
+            class="nav-link  <?= is_active('/administrator/suppliers',); ?>">
             <i class="nav-icon bi bi-truck"></i>
             <p>Suppliers</p>
           </a>
@@ -85,7 +85,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/customers"
-            class="nav-link  <?= is_active('/administrator/customers', ); ?>">
+            class="nav-link  <?= is_active('/administrator/customers',); ?>">
             <i class="nav-icon bi bi-people"></i>
             <p>Customers</p>
           </a>
@@ -96,7 +96,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/inventoryReports"
-            class="nav-link  <?= is_active('/administrator/inventoryReports', ); ?>">
+            class="nav-link  <?= is_active('/administrator/inventoryReports',); ?>">
 
             <i class="nav-icon bi bi-graph-up"></i>
             <p>Inventory Report</p>
@@ -105,7 +105,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/salesReports"
-            class="nav-link  <?= is_active('/administrator/salesReports', ); ?>">
+            class="nav-link  <?= is_active('/administrator/salesReports',); ?>">
             <i class="nav-icon bi bi-bar-chart-line"></i>
             <p>Sales Report</p>
           </a>
@@ -113,7 +113,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/returnsReports"
-            class="nav-link  <?= is_active('/administrator/returnsReports', ); ?>">
+            class="nav-link  <?= is_active('/administrator/returnsReports',); ?>">
             <i class="nav-icon bi bi-arrow-repeat"></i>
             <p>Returns Report</p>
           </a>
@@ -124,7 +124,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/expences"
-            class="nav-link  <?= is_active('/administrator/expeneces', ); ?>">
+            class="nav-link  <?= is_active('/administrator/expeneces',); ?>">
             <i class="nav-icon bi bi-currency-dollar"></i>
             <p>Expenses</p>
           </a>
