@@ -7,7 +7,6 @@ class AdministratorController extends Controller
 {
     public function index()
     {
-        header("Location: " . baseurl() . "/administrator/dashboard");
-        exit;
+        redirect('/administrator/dashboard');
     }
 }
