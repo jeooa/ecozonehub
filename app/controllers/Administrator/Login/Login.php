@@ -27,7 +27,7 @@ class Login extends Controller
                 session_regenerate_id(true);
                 redirect('/administrator/dashboard');
             } else {
-                set_flash('error', 'Invalid credentials or unauthorized access');
+                set_flash('error', 'Invalid username or password');
                 redirect('/administrator/login');
             }
         }
