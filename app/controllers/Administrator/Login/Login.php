@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Controllers\Administrator\Login;
-
 use function set_flash;
 use App\Core\Controller;
 use App\Models\Administrator\Login\Login as LoginModel;
