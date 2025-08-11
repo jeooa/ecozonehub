@@ -16,7 +16,7 @@
   <!--end::Primary Meta Tags-->
   <!--begin::Fonts-->
   <!-- Fonts -->
-  <link rel="stylesheet" href="<?= asset('dist/fonts/index.css') ?>" />
+  <link rel="stylesheet" href="<?= asset('dist/fonts/font.css') ?>" />
 
   <!-- OverlayScrollbars -->
   <link rel="stylesheet" href="<?= asset('libs/OverlayScrollbars/css/overlayscrollbars.min.css') ?>" />
