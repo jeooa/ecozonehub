@@ -13,7 +13,7 @@ class DashboardController extends Controller
     public function logout()
     {
         unset($_SESSION['admin']);
-        header('Location: ' . baseurl() . '/administrator/login');
+        redirect('/administrator/dashboard');
         exit;
     }
 }

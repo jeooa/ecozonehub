@@ -15,6 +15,7 @@
 
 <!-- AdminLTE -->
 <script href="<?= asset('dist/js/adminlte.min.js') ?>"></script>
+<!-- Type writer -->
 
 </body>
 
