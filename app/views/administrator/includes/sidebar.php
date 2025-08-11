@@ -18,7 +18,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/dashboard"
-            class="nav-link  <?= is_active('/administrator/dashboard', ); ?>">
+            class="nav-link  <?= is_active('/administrator/dashboard'); ?>">
             <i class="nav-icon bi bi-columns-gap"></i>
             <p>
               Dashboard
@@ -28,7 +28,7 @@
 
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/products"
-            class="nav-link  <?= is_active('/administrator/products', ); ?>">
+            class="nav-link  <?= is_active('/administrator/products'); ?>">
 
             <i class="nav-icon bi bi-box"></i>
             <p>Products</p>
@@ -38,7 +38,6 @@
         <li class="nav-item">
           <a href="<?= baseurl() ?>/administrator/categories"
             class="nav-link  <?= is_active('/administrator/categories', ); ?>">
-
             <i class="nav-icon bi bi-tags"></i>
             <p>Categories</p>
           </a>

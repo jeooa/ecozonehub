@@ -3,14 +3,17 @@
 if (!function_exists('is_active')) {
     function is_active(string $path, bool $partial = false): string
     {
-        $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
-        $path = $base . $path;
+        // Normalize current path: remove /public and project base dir
+        $currentPath = preg_replace(
+            '#^' . preg_quote(preg_replace('#/public$#', '', rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/')), '#') . '#',
+            '',
+            parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
+        );
 
-        if ($partial) {
-            return str_contains($currentPath, $path) ? 'active' : '';
-        }
+        $path = '/' . ltrim($path, '/');
 
-        return $currentPath === $path ? 'active' : '';
+        return $partial
+            ? (str_contains($currentPath, $path) ? 'active' : '')
+            : ($currentPath === $path ? 'active' : '');
     }
 }
