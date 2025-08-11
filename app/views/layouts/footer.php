@@ -5,17 +5,16 @@
 <footer class="main-footer text-center">
   <strong>&copy; 2025 Ecozonehub Admin</strong>
 </footer>
-</div> <!-- content-wrapper -->
-</div> <!-- wrapper -->
+</div>
+</div>
 
 <!-- Scripts -->
-<!-- jQuery -->
 
 <!-- Bootstrap -->
-<script src="<?= baseurl() ?>/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= asset('libs/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
 <!-- AdminLTE -->
-<script src="<?= baseurl() ?>/dist/js/adminlte.min.js"></script>
+<script href="<?= asset('dist/js/adminlte.min.js') ?>"></script>
 
 </body>
 

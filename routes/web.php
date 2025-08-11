@@ -1,6 +1,7 @@
 <?php
 //Administrator Routing
 $router->get('/', 'Customers\HomeController@dashboard');
+$router->get('/administrator', 'Administrator\Main\AdministratorController@index');
 $router->get('/administrator/dashboard', 'Administrator\Dashboard\DashboardController@index');
 $router->get('/administrator/products', 'Administrator\Products\ProductsController@index');
 $router->get('/administrator/categories', 'Administrator\Categories\CategoriesController@index');

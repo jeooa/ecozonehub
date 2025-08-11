@@ -15,18 +15,14 @@ class Login extends Controller
 
     public function authenticate()
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $username = $_POST['username'] ?? '';
+            $username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_FULL_SPECIAL_CHARS)) ?? '';
             $password = $_POST['password'] ?? '';
 
             $adminModel = new LoginModel();
             $admin = $adminModel->getByUsername($username);
 
-            if ($admin && password_verify($password, $admin['password'])) {
+            if ($admin && password_verify($password, $admin['password']) && $admin['user_type'] === 'admin') {
                 $_SESSION['admin'] = $admin;
                 session_regenerate_id(true);
                 redirect('/administrator/dashboard');
@@ -37,12 +33,9 @@ class Login extends Controller
         }
     }
 
+
     public function logout()
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-
         unset($_SESSION['admin']);
         redirect('/administrator/login');
         exit;
